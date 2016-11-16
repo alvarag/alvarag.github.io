@@ -1,0 +1,470 @@
+<!DOCTYPE html >
+<html lang="es">
+	<head>
+		<meta charset='UTF-8'/>
+		<meta name='description' content='Informaci&oacute;n sobre los proyectos final de carrera  presentados en 5º de Ingenier&iacute;a Inform&aacute;tica en la Universidad de Burgos' />
+		<meta name='keywords' content='Sistemas Inform&aacute;ticos, m&eacute;tricas software, ingenieria software, proyectos inform&aacute;ticos'/>
+		<title> Sistemas Inform&aacute;ticos </title>
+		<link rel='shortcut icon' href='./images/logoLSI.gif'/>
+		<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+		<link rel='alternate' title='Sistemas Informaticos' href='./rss/SistemasInformaticos.rss' type='application/rss+xml' />
+		<!--JS-->
+		<script src='https://code.jquery.com/jquery-2.1.1.min.js'></script>
+		<script src='./js/materialize.min.js' type='text/javascript'> </script>
+		<script src='./js/init.js' type="text/javascript"> </script>
+		<script src='./js/sorttable.js' type='text/javascript'> </script>
+		<script src='./js/chart.js' type="text/javascript"> </script>
+		<!--CSS-->
+		<link href='css/materialize.min.css' type='text/css' rel='stylesheet' media='screen,projection'/>
+		<link href='css/style.css' type='text/css' rel='stylesheet' media='screen,projection'/>
+	</head>
+	<body>
+		<div id='page-wrapper'>
+			<div id='page'>
+				<header>
+					<nav class='red ubu'>
+						<div class='container'>
+							<div class='nav-wrapper'>
+								<div class='col s12'>
+									<a href='index.html' class='brand-logo'><img src='./images/logoUBU.png' alt='UBu'/></a>
+									<ul class='right hide-on-med-and-down'>
+										<li><a class='dropdown-button' href='index.html'>Informaci&oacute;n</a></li>
+										<li><a class='dropdown-button' href='ActualesSist.html'>Proyectos activos</a></li>
+										<li><a class='dropdown-button' href='HistoricoSist.html'>Hist&oacute;rico</a></li>
+										<li><a class='dropdown-button' href='MetricSist.html'>M&eacute;tricas</a></li>
+									</ul>
+									<ul id='slide-out' class='side-nav full'>
+										<li><a href='index.html'>Informaci&oacute;n</a></li>
+										<li><a href='ActualesSist.html'>Proyectos activos</a></li>
+										<li><a href='HistoricoSist.html'>Hist&oacute;rico</a></li>
+										<li><a href='MetricSist.html'>M&eacute;tricas</a></li>
+									</ul>
+									<a href='#' data-activates='slide-out' class='button-collapse'><i class='mdi-navigation-menu'></i></a>
+								</div>
+							</div>
+						</div>
+					</nav>
+				</header>
+				<div id='pageHome' class='container'>
+					<section>
+						<div class='container right_aligned'>
+							<script type="text/javascript">addthis_pub  = 'gymi82';</script>
+							<a href="http://www.addthis.com/bookmark.php" onmouseover="return addthis_open(this, '', '[URL]', '[TITLE]')" 
+							   onmouseout="addthis_close()" onclick="return addthis_sendto()">
+							   <img class="gif" src="http://s9.addthis.com/button1-bm.gif" alt="compartir"/>
+							</a>
+							<script type="text/javascript" src="http://s7.addthis.com/js/152/addthis_widget.js"></script>
+							<a href="javascript:var t=((window.getSelection&amp;&amp;window.getSelection())||(document.getSelection&amp;&amp;document.getSelection())||(document.selection&amp;&amp;document.selection.createRange&amp;&amp;document.selection.createRange().text));var e=(document.charset||document.characterSet);if(t!=''){location.href='http://translate.google.com/translate_t?text='+t+'&amp;hl=es&amp;langpair=auto|en&amp;tbb=1&amp;ie='+e;}else{location.href='http://translate.google.com/translate?u='+escape(location.href)+'&amp;hl=es&amp;langpair=auto|en&amp;tbb=1&amp;ie='+e;};" 
+							   onclick="alert(document.getElementById('instructions').firstChild.nodeValue);return false;">
+							   <img class="gif" src="http://www.google.com/intl/es/images/logos/translate_logo.gif" alt="Google Translate" />
+							</a>	
+						</div>
+					</section>
+					<section>
+						<h2 class='leading_line left_aligned'>M&eacute;tricas<a href='#top'><i class='mdi-navigation-expand-less small'></i></a>
+						</h2>
+						<table>
+							<thead>
+								<tr>
+									<th colspan='2'> <i class='small mdi-action-info'></i>Informaci&oacute;n estad&iacute;stica</th>
+								</tr> 
+							</thead>
+							<tbody>
+								<tr>
+									<td>N&uacute;mero Total de Proyectos: <br/>38.0 </td>
+									<td>N&uacute;mero Total de Proyectos sin asignar: <br/>10.0<br/> Buscar la cadena 'Aalumnos sin asignar' en columna Alumnos.</td>
+									<td>N&uacute;mero Total de Alumnos: <br/>30.0 </td>
+									<td>N&uacute;mero Total de Tutores Involucrados: <br/>24.0 </td>								</tr>
+							</tbody>
+						</table>
+					</section>
+					<section>
+						<h2 class='leading_line left_aligned'>Descripci&oacute;n de proyectos<a href='#top'><i class='mdi-navigation-expand-less small'></i></a>
+						</h2>
+						<p></p>
+						<table class='nav'>
+							<tbody>
+								<tr>
+									<td><a href="javascript:MostrarAllFilas(38, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,38, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,38, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,38, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(3,8,10,38, 'P')">31...38</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+						<ol class='lnorm'><li> Tabla ordenable por columnas. Haz click en las cabeceras de las columnas. </li></ol>
+						<table class="sortable striped">
+							<thead>
+								<tr>
+									<th> T&iacute;tulo<i class= ' tiny mdi-content-sort'></i></th>
+									<th> Descripci&oacute;n</th>
+									<th> Tutor/es</th>
+									<th> Alumno/s</th>
+									<th> CursoAsignacion</th>
+								</tr> 
+							</thead>
+						<tbody>
+							<tr id="P0"> <!-- Begin Proyecto-->
+								<th> Herramienta de cálculo de rutas óptimas según parámetros de accesibilidad física en itinerarios urbanos</th>
+								<td> Se trata de desarrollar una herramienta informática capaz de realizar rutas óptimas en ámbitos urbanos, visitando puntos de interés histórico situados en el tramo urbano que supone el casco antiguo del municipio, teniendo en cuenta ciertos parámetros de accesibilidad física, como son la pendiente, la anchura o la iluminación de las calles. El usuario elegirá los puntos de partida y destino de la ruta que quiere realizar y si quiere una ruta para una persona sin discapacidad o con silla de, y el sistema aportará al usuario la distancia (medida en tiempo) de la ruta escogida y los puntos de interés que visitará.
+</td>
+								<td> María Belén Vaquerizo García<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P1"> <!-- Begin Proyecto-->
+								<th> Simulador SNMP IV. </th>
+								<td> Se trata de generar nuevas funcionalidades a un simulador que implementa agentes SNMP en sus diferentes versiones, para poder probar sobre éste las bibliotecas, aplicaciones de gestión u otras aplicaciones también implementadas a través de Proyectos Fin de Carrera de la UBU.
+Para su realización se tomará como base un Proyecto realizado en la UBU (Ver los Proyectos de Gestión de Red basada en SNMP en
+http://pisuerga.inf.ubu.es/jmsaiz/SoftLibre.html#Gestión_Red_SNMP) cuya última versión fue modificada por Cristian de la Hoz en el proyecto Gestión de Red V (http://pisuerga.inf.ubu.es/jmsaiz/Proyectos2/SimSNMP-4/SimSNMP-4.zip).
+Su finalidad será la de ser utilizada en la asignatura de DASR y realizar su seguimiento y análisis.
+Hay tres posibles tareas a desarrollar:
+- Resolver un problema ya documentado en el proyecto de Cristian de la
+Hoz, Gestión de Red V (gestión de red real basada en SNMP).
+- Importar y exportar los datos hacia y desde la aplicación correspondiente al proyecto Gestión de Red V. Esta importación de datos permitirá implementar el simulador como un Proxy/Gestor en modo colaborativo que muestre la red simulada como si existiera realmente.
+- Realizar un cierto tratamiento sobre las RFCs. Ello supone por un lado
+poder tratar todos los ficheros correspondientes a las RFCs de tal forma que puedan ser incorporados por esta aplicación. Por otro lado añadir un seguimiento de versiones de las RFCs.
+- Generación de un simulador de Router a través del cual se accederá a una red completa simuladas cuyas máquinas podrán estar definidas mediante las MIB del simulador SNMP. El Gestor realizará las peticiones como si se tratara de un router y éste trasladará las peticiones del Gestor a cada una de las máquinas simuladas.</td>
+								<td> José Manuel Sáiz Díez<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P2"> <!-- Begin Proyecto-->
+								<th> Framework para exponer a través de servicios web REST la funcionalidad de un modelo de negocio existente</th>
+								<td> Hacer un framework para ofrecer de forma sencilla a través de servicios web REST cierta funcionalidad definida a través de interfaces. Se podría aplicar por ejemplo para conectar un ERP empresarial con algún proveedor de servicios externo.
+</td>
+								<td> Rubés Cobos Pomares<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P3"> <!-- Begin Proyecto-->
+								<th> Herramienta de soporte a la toma de decisiones para la Gestión de Flotas: Asignación de Pedidos y Rutas</th>
+								<td> Partiendo de una flota limitada con vehículos de distintas características, una red de puntos de distribución y una lista de pedidos, se ha de calcular la ruta óptima para cada uno de los vehículos para atender todos los pedidos en un tiempo mínimo, haciendo el menor uso posible de los activos y consiguiendo la plena satisfacción de los clientes con los servicios. El resultado será una lista de pedidos para cada vehículo y la mejor ruta para ejecutar los mismos.</td>
+								<td> María Belén Vaquerizo García<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P4"> <!-- Begin Proyecto-->
+								<th> Sistema de triangulación volumétrica IV</th>
+								<td> Se trata de implementar una aplicación que localizará clientes WiFi en cualquier edificio desde un equipo central. Para ello triangulará su posición dentro de un edificio, seguirá sus trazas, almacenará los datos correspondientes que provengan de las diferentes alternativas posibles, facilitará su representación volumétrica, permitirá el seguimiento de uno o varios de estos puntos, etc.
+Su base tecnológica serán Servidores Web y WiFi.
+Para su realización se tomarán como base Proyectos realizados en los cursos anteriores que ya resuelven la parte de localización y de representación en 3D de los dispositivos WiFi dentro de cualquier edificio.
+Los dispositivos a utilizar para la captura de datos son Puntos de Acceso cuyo software será modificado para realizar las peticiones necesarias a los dispositivos WiFi de los clientes.
+Su resultado será comparado con el obtenido a partir de otras aplicaciones ya existentes basadas en la localización desde los clientes.
+Ver Proyectos de Sistemas de Triangulación WiFi en http://pisuerga.inf.ubu.es/jmsaizSoftLibre.html#Sistema_Triangulación_WiFi.</td>
+								<td> José Manuel Sáiz Díez<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P5"> <!-- Begin Proyecto-->
+								<th> Modelo heurístico para la gestión óptima de rutas de distribución comercial típica de productos</th>
+								<td> Con el objetivo de tratar de eliminar los problemas que surgen la distribución comercial de productos, este modelo debe permitir planificar cómo se desarrollarán las rutas de distribución durante toda la semana (y no solo durante un dia), debe permitir equilibrar la carga de trabajo entre los diferentes vehículos o conductores, intentar que los clientes sean servidos por el mismo profesional, e intentar minimizar los costes de distribución. Se propone resolver este problema de optimización combinatoria multiobjetivo mediante procedimientos heurísticos</td>
+								<td> María Belén Vaquerizo García<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P6"> <!-- Begin Proyecto-->
+								<th> Distribuciones Linux IV </th>
+								<td> Se persigue dotar al alumno de la herramienta necesaria para rentabilizar al máximo su esfuerzo homogeneizando el entorno de trabajo sea cual sea su ubicación.</td>
+								<td> José Manuel Sáiz Díez<p></p><p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P7"> <!-- Begin Proyecto-->
+								<th> UBUHERMES 5.0</th>
+								<td> Se trata de realizar la quinta versión de esta herramienta Java de escritorio.
+La aplicación Java llama a Matlab para que ejecute distintos métodos de inteligencia artificial, especialmente de reducción de la dimensionalidad y de clustering. No se requiere conocer los métodos, sólo los parámetros que manipula. En esta versión se tratará de universalizar más la herramienta y hacerla más flexible, así como de completar aspectos que quedaron algo mediocres.</td>
+								<td> Jesús Enrique Sierra García<p></p>Ángel Arroyo Puente<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P8"> <!-- Begin Proyecto-->
+								<th> HP - Herramienta de traducción y visualización de cadenas de texto</th>
+								<td> El proyecto consiste en el desarrollo de una aplicación que permita manejar cadenas a traducir, permitiendo operaciones de creación, modificación, borrado, búsqueda y visualización de cadenas en varios idiomas.</td>
+								<td> Carlos Pardo Aguilar<p></p>Tutor HP<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P9"> <!-- Begin Proyecto-->
+								<th> Aplicación para el Acceso a Plataformas de ELearning desde Dispositivos Móviles</th>
+								<td> El proyecto parte de la base de un proyecto anterior para completar la funcionalidad de una aplicación móvil que permita el acceso simplificado a los contenidos puestos a disposición del alumno por medio del sistema de elearning de la Universidad de Burgos (UBUVirtual). De esta forma, se permite la centralización de contenidos y trabajos sobre la plataforma actual, a la vez que se facilita el acceso y manejo de la misma desde diferentes entornos por parte de los alumnos (tanto web como móvil).</td>
+								<td> Bruno Baruque Zanón<p></p>María Belén Vaquerizo García<p></p> </td>
+								<td> Aalumnos sin asignar<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P10"> <!-- Begin Proyecto-->
+								<th> FaTrApp - (Fair Trade App) v2.0</th>
+								<td> Ampliación de funcionalidad en app para distribución de productos de comercio justo (Fair Trade) y establecimientos de consumo responsable (banca ética, agricultura ecológica). Se ampliará la funcionalidad, permitiendo extender la información que queda a disposición de los usuarios, incluyendo eventos, compartición en redes sociales, sistema de notificaciones, estadísticas, información sobre productos y productores, etc.</td>
+								<td> Álvaro Herrero Cosío<p></p><p></p> </td>
+								<td> Javier López Martínez<p></p> <p></p>  </td>
+								<td> 2013-2014</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P11"> <!-- Begin Proyecto-->
+								<th> BlocklyToChapinToC Facil v1</th>
+								<td> El propósito es crea un programa que lea un xml creado con Blockly en el que haya descritos módulos secuenciales y alternativos y genere un diagrama de Chapin de ese módulo y una función en C_fácil.</td>
+								<td> Carlos Pardo Aguilar<p></p><p></p> </td>
+								<td> David Ramos Sánchez<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P12"> <!-- Begin Proyecto-->
+								<th> SWAPP</th>
+								<td> Existen multitud de situaciones en las que se requiere un reparto de turnos o guardias entre un grupo de personas (e.g. personal sanitario en servicios hospitalarios, servicios de seguridad, emergencias, bomberos, etc.). En muchas ocasiones, el reparto de guardias planificado podría mejorarse fácilmente si se llevaran a cabo cambios bilaterales que a veces no se llegan a producir simplemente porque las partes implicadas desconocen que existe esa oportunidad de mejora conjunta.
+El objetivo de este proyecto es implementar una aplicación para teléfonos móviles que, partiendo de una distribución de guardias y un conjunto de preferencias declaradas por cada cliente:
+1. Detecte cambios bilaterales que, en caso de producirse, incrementarían el bienestar de las personas implicadas (de acuerdo con su conjunto de preferencias declaradas).
+2. De forma automática, mande un mensaje gratuito a las personas implicadas proponiendo el cambio y, 
+3. En el caso de que todas las partes implicadas acepten el cambio propuesto, actualice todos los calendarios que se han visto modificados por el cambio (así como una base de datos conjunta que idealmente pueda consultarse vía web).
+El cliente dispondrá de un calendario en el que deberá introducir sus guardias, sus preferencias (que como mínimo deben incluir un conjunto de guardias asignadas de las que el cliente se quiere desprender, así como un conjunto de turnos no asignados que el cliente estaría dispuesto a aceptar) y sus posibles restricciones (e.g. imposibilidad de llevar a cabo dos guardias seguidas). Naturalmente, todos estos datos deben poder ser modificables, y el sistema debe ser capaz de ajustarse automáticamente en tiempo real.</td>
+								<td> Luis Rodrigo Izquierdo Millán<p></p>María Pereda García<p></p> </td>
+								<td> Diego Estanislao Prado Nebreda<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P13"> <!-- Begin Proyecto-->
+								<th> Gestor de trabajos fin de grado y/o máster</th>
+								<td> El propósito de este trabajo es realizar operaciones de mantenimiento sobre una herramienta desarrollada en Java y utilizada para gestionar los trabajos fin de grado (ver https://dl.dropboxusercontent.com/u/18996787/web/index.html). Desde el punto de vista de encargados de gestionar la asignatura y de tutores y alumnos que desarrollen trabajos fin de grado. En el contexto de un proyecto fin de grado del Grado de Ingeniería Informática de la Universidad de Burgos.</td>
+								<td> Carlos López Nozal<p></p><p></p> </td>
+								<td> Beatriz Zurera Martínez-Acitores<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P14"> <!-- Begin Proyecto-->
+								<th> Ubugraph 3.0</th>
+								<td> El propósito de este proyecto es añadir funcionalidad a una aplicación de carácter docente para la propuesta y resolución automática de ejercicios de programación de proyectos.</td>
+								<td> José Manuel Galán Ordax<p></p>María Pereda García<p></p> </td>
+								<td> Rubén Arranz Alonso<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P15"> <!-- Begin Proyecto-->
+								<th> Planificador de rutas multitransporte</th>
+								<td> Aplicación Android, que permita obtener la ruta más corta para dirigirse desde un punto de la ciudad de Burgos a otro usando el sistema de transporte urbano disponible (autobús). Para ello se usará el posicionamiento por GPS o la búsqueda de una dirección en Google Maps, y se usará una base de datos interna donde aparecerán las líneas de buses disponibles con las paradas con el tiempo estimado de recorrido. Una vez creada esta primera versión, se añadirán funcionalidades como búsqueda por recorrido más ecónomico, recorrido con o sin trasbordos, el recorrido más rápido con o sin contar el tiempo de espera en las paradas, recorridos contando una parte a pie y otra en bus, etc..</td>
+								<td> Raúl Marticorena Sánchez<p></p>César Ignacio García Osorio<p></p> </td>
+								<td> Luis David de la Fuente Rodríguez<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P16"> <!-- Begin Proyecto-->
+								<th> Aplicación web para la gestión de prácticas en empresa</th>
+								<td> Se trata de la realización de una aplicación web para gestionar el proceso de prácticas en empresa de algunas de la titulaciones de la escuela politécnica superior.</td>
+								<td> José Manuel Galán Ordax<p></p>María Pereda García<p></p> </td>
+								<td> Zaira Gordo Orive<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P17"> <!-- Begin Proyecto-->
+								<th> Realidad aumentada aplicada a la salud</th>
+								<td> El objetivo es diseñar una serie de ejercicios orientados a la mejora de los hábitos saludables utilizando como herramienta un dispositivo que
+haga uso de la realidad aumentada. Este conjunto de ejercicios permitirá al terapeuta escoger el más adecuado para cada paciente y
+realizar un seguimiento del mismo. La aplicación dispondrá de una base de datos en la que almacenar los ejercicios realizados por cada
+paciente así como su evolución en cada uno de ellos.</td>
+								<td> José María Cámara Nebreda<p></p>Pedro Luis Sánchez Ortega<p></p> </td>
+								<td> Jesús Juan San Emeterio Izquierdo<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P18"> <!-- Begin Proyecto-->
+								<th> OCR de tickets de compra</th>
+								<td> Aplicación Android que permite capturar la imagen de un ticket de compra mediante la cámara y obtener a partir de esta imagen la lista de items comprados y su precio.</td>
+								<td> José Francisco Díez Pastor<p></p>Raúl Marticorena Sánchez<p></p> </td>
+								<td> Roberto Miranda Pérez<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P19"> <!-- Begin Proyecto-->
+								<th> UnameIT. internet de las cosas</th>
+								<td> Análisis y desarrollo de una aplicación que servirá de interfaz gráfica para una aplicación web ya existente de internet de las cosas. La interfaz sería desarrollada completamente en Java con el uso de la
+herramienta Vaadin. Opcionalmente sería beneficioso el incluir el diseño de la automatización de pruebas contra la interfaz desarrollada. Marco global del proyecto unameit.bitbucket.org
+</td>
+								<td> Carlos López Nozal<p></p><p></p> </td>
+								<td> Mario Juez Gil<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P20"> <!-- Begin Proyecto-->
+								<th> Aplicación Fitness para Android</th>
+								<td> Aplicación Android que permite cuantificar el ejercicio realizado: distancia recorrida, tiempo, velocidad, calorías consumidas etc. Con la principal novedad de que la aplicación es capaz de determinar la
+actividad realizada simplemente analizando los sensores del smartphone.</td>
+								<td> José Francisco Díez Pastor<p></p>Álvar Arnáiz González<p></p> </td>
+								<td> Blanca Monserrat González Lomas<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P21"> <!-- Begin Proyecto-->
+								<th> Generación de cuestionarios para la docencia on-line de grafos y sus algoritmos</th>
+								<td> Desarrollar una herramienta de escritorio Java que ayude a generar preguntas de test aleatorias (quiz, cloze, texto libre...) sobre problemas tipo de grafos. El formato utilizado para generar las preguntas tiene que se importable a entornos virtuales de aprendizaje en uso (Moodle, exeLearning...). </td>
+								<td> Juan José Rodríguez Díez<p></p>Carlos López Martínez<p></p> </td>
+								<td> Jorge Alonso Márquez<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P22"> <!-- Begin Proyecto-->
+								<th> Control de un vehículo omnidireccional industrial en Android/IOS</th>
+								<td> El propósito de este proyecto es la creación de una aplicación para Android/IOS capaz de controlar el movimiento de un vehículo omnidireccional industrial real. Empleará el acelerómetro del móvil/Tablet para controlar la dirección del vehículo. También será capaz de monitorizar y modificar las variables internas que gobiernan el funcionamiento del vehículo. El proyecto se llevara a cabo en el marco de una beca de colaboración o prácticas en la empresa Automatismos y Sistemas de Transporte Interno (ASTI).</td>
+								<td> Jesús Enrique Sierra García<p></p><p></p> </td>
+								<td> Álvar Viana Gómez<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P23"> <!-- Begin Proyecto-->
+								<th> Extensión de Lógica Difusa para NetLogo</th>
+								<td> El objetivo de este proyecto es implementar en Java una extensión para poder usar funciones básicas de lógica difusa en la plataforma de programación NetLogo. El estudiante contará con varias funciones escritas por el tutor en NetLogo como punto de partida. Para más información sobre extensiones en NetLogo, consultar: https://github.com/NetLogo/NetLogo/wiki/Extensions-API.</td>
+								<td> Luis Rodrigo Izquierdo Millán<p></p>María Pereda García<p></p> </td>
+								<td> Marcos Almendres García<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P24"> <!-- Begin Proyecto-->
+								<th> Herramienta docente de algoritmos de búsqueda de rutas</th>
+								<td> Creación de una aplicación que permita visualizar el funcionamiento de algoritmos de búsqueda de rutas en un entorno 3D, explorar la aplicación de dichos algoritmos a problemas simulados como el desplazamiento de un vehículo sobre un terreno o un mapa.</td>
+								<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio<p></p> </td>
+								<td> Víctor Pérez Esteban<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P25"> <!-- Begin Proyecto-->
+								<th> Interfaz de acceso telefónico a módulo de control inalámbrico</th>
+								<td> El objetivo del proyecto es el desarrollo de una aplicación para un dispositivo móvil que permita reproducir la funcionalidad de un módulo de control inalámbrico ya existente, de manera que su funcionalidad esté disponible en cualquier ubicación.</td>
+								<td> José María Cámara Nebreda<p></p>Pedro Luis Sánchez Ortega<p></p> </td>
+								<td> Mario Saíz Calderón<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P26"> <!-- Begin Proyecto-->
+								<th> Sistema de estimación de edad a partir de radiografías dentales</th>
+								<td> A partir de radiografías dentales, se debe realizar la clasificación de los estados de los dientes, para posteriormente realizar una serie de cálculos que permitan estimar las edades de los sujetos.
+</td>
+								<td> Raúl Marticorena Sánchez<p></p>José Francisco Díez Pastor<p></p> </td>
+								<td> Álvaro Ruiz Molledo<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P27"> <!-- Begin Proyecto-->
+								<th> Herramienta de ayuda a la localización de objetos para personas con problemas de visión</th>
+								<td> Creación de una aplicación que mediante técnicas de reconocimiento de imagen sea capaz de ayudar al usuario a encontrar objetos. La aplicación toma imágenes de el lugar donde el usuario está buscando un determinado objeto y le indica si ese objeto está realmente allí, como encontrarlo o por el contrario no esta allí.</td>
+								<td> José Francisco Díez Pastor<p></p>César Ignacio García Osorio<p></p> </td>
+								<td> Bryan Mauricio Reinoso Cevallos<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P28"> <!-- Begin Proyecto-->
+								<th> Realidad aumentada aplicada a la educación</th>
+								<td> El objetivo es diseñar una aplicación preferentemente para dispositivos móviles (smartphones, tablets) para su uso en el sector educativo. La aplicación permitirá el uso de la realidad aumentada en los entornos de aprendizaje para potenciar la atención del alumno en los ejercicios propuestos.
+La aplicación deberá almacenar los resultados obtenidos por cada estudiante en cada uno de los ejercicios realizados para comprobar su evolución.</td>
+								<td> José María Cámara Nebreda<p></p>Pedro Luis Sánchez Ortega<p></p> </td>
+								<td> Jorge Laguna Delgado<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P29"> <!-- Begin Proyecto-->
+								<th> Aplicación web multiplataforma para la mejora del sistema de gestión del servicio de recetas médicas</th>
+								<td> El proyecto consiste en realizar una aplicación web multiplataforma (PC y dispositivos móviles) que mejore la gestión de recetas médicas ofreciendo un servicio más eficiente en pueblos aislados, evitando el desplazamiento al centro de salud y proporcionando la
+geolocalización de la farmacia más cercana en la cual podremos recoger directamente nuestras recetas. El alumno deberá ser capaz de crear una aplicación cliente servidor basada en arquitectura REST. </td>
+								<td> José Manuel Galán Ordax<p></p>Álvar Arnáiz González<p></p> </td>
+								<td> María Cristina Torralba Díez<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P30"> <!-- Begin Proyecto-->
+								<th> Diseño de un archivo cinematográfico personal</th>
+								<td> El objetivo es desarrollar una aplicación que sirva como base de datos para una colección personal de películas con un número de campos configurable y adecuado para la clasificación de filmes. La aplicación debe funcionar como motor de búsqueda en la web para que sea capaz de rellenar automáticamente todos los campos a partir del título de la película.</td>
+								<td> César Represa Pérez<p></p><p></p> </td>
+								<td> Daniel Lozano Rebé<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P31"> <!-- Begin Proyecto-->
+								<th> Aplicación Android para la gestión de billetes de lotería</th>
+								<td> El objetivo es desarrollar una aplicación para dispositivos móviles con S.O. Android que a partir de la captura de la imagen de un billete de lotería obtenga la información necesaria para establecer si ha sido premiado o no.</td>
+								<td> César Represa Pérez<p></p><p></p> </td>
+								<td> Jorge Alamo Olive<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P32"> <!-- Begin Proyecto-->
+								<th> Clasificación de langostinos basada en reconocimiento de color</th>
+								<td> El propósito del trabajo es desarrollar una aplicación que permita clasificar diferentes langostinos en función de su color. Para ello se deberá capturar una imagen del langostino y comparar su color con un determinado patrón de colores.</td>
+								<td> César Represa Pérez<p></p>Pedro Luis Sánchez Ortega<p></p> </td>
+								<td> Juan Pablo Zubiaga Martín<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P33"> <!-- Begin Proyecto-->
+								<th> Plataforma web interactiva de Minería de Datos</th>
+								<td> El propósito del proyecto es la de generar un prototipo de minería de datos basado en tecnología web para facilitar a los expertos el diseño y análisis de problemas reales con una gran dificultad. El alumno centrará sus esfuerzos en el desarrollo de una plataforma usable e intuitiva, e integración de algoritmos de minería de datos en la plataforma web.</td>
+								<td> Julián Luengo Martín<p></p>Cristóbal José Carmona Del Jesús<p></p> </td>
+								<td> Nazaret Pérez Ruiz<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P34"> <!-- Begin Proyecto-->
+								<th> Webapp para presupuestos software</th>
+								<td> Creación de una aplicación multiplataforma para presupuestar diferentes desarrollos de software (categorías): apps móviles, páginas web, tiendas online, intranets, SEO, etc.
+Estas categorías contendrán módulos que el usuario podrá ir seleccionando en caso de que los requiera, sumando el precio de cada uno de ellos, al precio base de la categoría. Los módulos podrán ser añadidos y eliminados mediante drag and drop, dándole al usuario la posibilidad de crear su aplicación a medida.
+Estos módulos contendrán información detallada: texto, imagen, precio, etc, de forma que el usuario entienda que esta añadiendo a su pedido. La aplicación deberá obtener de manera dinámica y remota, los datos de un Web Services, que los proporcionara en formato JSON, incluyendo datos como precios, categorías, imágenes, etc.
+Tras finalizar el desarrollo de la categoría, se le mostrará al usuario un resumen con el coste total divido cada módulo por diferentes periodos de facturación y para finalizar el usuario podrá enviar su pedido mediante una petición al servidor, enviando además sus datos de contacto.
+</td>
+								<td> César Ignacio García Osorio<p></p>Álvar Arnáiz González<p></p> </td>
+								<td> David Moreno del Hoyo<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P35"> <!-- Begin Proyecto-->
+								<th> Generación de cuestionarios para la docencia on-line de métodos de programación dinámica</th>
+								<td> Desarrollar una herramienta de escritorio que ayude a generar preguntas de test aleatorias (quiz, cloze, texto libre...) sobre problemas tipo de métodos de programación dinámica (subsecuencia común más larga, mochila, multiplicación encadenada de matrices, árboles de búsqueda óptimos...). El formato utilizado para generar las preguntas tiene que ser importable a entornos virtuales de aprendizaje en uso (Moodle, exeLearning...). </td>
+								<td> Juan José Rodríguez Díez<p></p>Carlos López Nozal<p></p> </td>
+								<td> Asier Alonso Morante<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P36"> <!-- Begin Proyecto-->
+								<th> Plataforma Web para simulación electoral de las elecciones municipales</th>
+								<td> El propósito de esta plataforma es obtener una plataforma web de fácil utilización por parte de los partidos políticos, órganos locales y provinciales sobre los resultados electorales obtenidos en las lecciones municipales.</td>
+								<td> Julián Luengo Martín<p></p>Cristóbal José Carmona Del Jesús<p></p> </td>
+								<td> Álvaro López Cantero<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+							<tr id="P37"> <!-- Begin Proyecto-->
+								<th> Herramienta para cuestionarios ágiles integrada en Moodle</th>
+								<td> El proyecto pretende crear una aplicación que permita contestar cuestionarios sencillos a través de dispositivos móviles o PCs. Esto permite al profesor y al alumno obtener un feedback inmediato de la comprensión de las explicaciones dadas durante la clase. Se quiere incrementar el atractivo de la actividad por medio de una componente de juego o "gamificación". Además se realizará la integración de esta herramienta en la plataforma Moodle para permitir el intercambio de información entre ambas.</td>
+								<td> Bruno Baruque Zanón<p></p><p></p> </td>
+								<td> Alejandro Martínez García<p></p> <p></p>  </td>
+								<td> 2014-2015</td>
+							</tr><!-- End Proyecto-->
+						</tbody>
+						</table>
+						<p></p>
+						<table class='nav'>
+							<tbody>
+								<tr>
+									<td><a href="javascript:MostrarAllFilas(38, 'P')"> Todas</a> </td>
+									<td><a href="javascript:MostrarFilas(0,10,38, 'P')">1...10</a> </td>
+									<td><a href="javascript:MostrarFilas(1,10,38, 'P')">11...20</a> </td>
+									<td><a href="javascript:MostrarFilas(2,10,38, 'P')">21...30</a> </td>
+									<td><a href="javascript:MostrarFilasUltima(3,8,10,38, 'P')">31...38</a> </td>
+								</tr>
+							</tbody>
+						</table>
+						<p></p>
+					</section>
+				</div>
+			</div>
+			<footer class='page-footer grey ubu'>
+				<div class='container'>
+					<div class='row'>
+						<div class='col l4 s12'>
+							<h5 class='white-text'>Informaci&oacute;n</h5>
+							<p class='white-text'><i class='mdi-action-face-unlock'></i> Creado por <strong>Beatriz Zurera Mart&iacute;nez-Acitores</strong> <br/>
+							<i class='mdi-communication-email'></i> <a href='mailto:bzm0001@alu.ubu.es'>bzm0001@alu.ubu.es</a> </p>
+							<p class='white-text'><i class='mdi-hardware-keyboard-alt'></i> Tutorizado por <strong>Carlos L&oacute;pez Nozal </strong> <br/>
+							<i class='mdi-communication-email'></i> <a href='mailto:clopezno@ubu.es'>clopezno@ubu.es</a> </p>
+						</div>
+						<div class='col l4 s12'>
+							<ul>
+								<li><a href='http://validator.w3.org/check/referer' title='UBU'><img class='img-responsive' src='./images/HTML.png' title='UBU' alt='UBU'/></a></li>
+							</ul>
+						</div>
+						<div class='col l4 s12'>
+							<ul>
+								<li class='white-text'><a rel='license' href='http://creativecommons.org/licenses/by/4.0/'><img alt='Creative Commons License' style='border-width:0' src='https://i.creativecommons.org/l/by/4.0/88x31.png' /></a><br />SistInfWeb by Carlos L&oacute;pez Nozal and Beatriz Zurera Mart&iacute;nez-Acitores is licensed under a <a rel='license' href='http://creativecommons.org/licenses/by/4.0/'>Creative Commons Attribution 4.0 International License</a>.</li>
+								<li class='white-text'>Fecha de actualizaci&oacute;n Wed Nov 16 09:25:47 CET 2016 </li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class='footer-copyright'>
+					<div class='container white-text'>
+						Copyright  <strong>&copy; LSI</strong>.
+					</div>
+				</div>
+			</footer>
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-60054141-1', 'auto');
+		  ga('send', 'pageview');
+		
+		</script>
+		</div>
+	</body>
+</html>
